@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/04 14:20:06 by tiskow            #+#    #+#             */
-/*   Updated: 2016/10/18 01:19:05 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/10/18 11:23:16 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,8 +70,9 @@ void	ft_putchar(char c);
 void	ft_putstr(const char *str);
 void	ft_putendl(const char *str);
 void	ft_putnbr(int n);
-void	ft_putchar_fd(char c, int fd);
+void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(const char *str, int fd);
+void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(const char *str, int fd);
 t_list	*ft_lstnew(const void *content, size_t content_size);
 void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
