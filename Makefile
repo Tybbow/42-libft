@@ -6,7 +6,7 @@
 #    By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/09/12 09:42:07 by tiskow            #+#    #+#              #
-#    Updated: 2016/10/17 05:18:46 by tiskow           ###   ########.fr        #
+#    Updated: 2016/11/07 12:35:48 by tiskow           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,8 +31,7 @@ compilation:
 
 compilationdyn: fclean
 	$(CC) $(HEADER) $(CFLAGS) $(SRCS)
-	
-	
+
 clean:
 	/bin/rm -f $(OBJS)
 
