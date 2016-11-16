@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/04 14:15:07 by tiskow            #+#    #+#             */
-/*   Updated: 2016/10/17 04:39:09 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/16 08:16:00 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		((char *)s)[i] = c;
+		((unsigned char *)s)[i] = c;
 		i++;
 	}
 	return (s);

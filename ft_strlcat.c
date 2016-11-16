@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/06 14:21:18 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/10 05:29:43 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/16 08:44:33 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,16 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
-	if (!ft_strlen(dest))
+	size_t	len;
+	
+	len = ft_strlen(dest);
+	if (!len)
 	{
 		ft_strncpy(dest, src, n - 1);
 		return (ft_strlen(src));
 	}
-	if (n <= ft_strlen(dest))
+	if (n <= len)
 		return (ft_strlen(src) + n);
-	ft_strncpy(&dest[ft_strlen(dest)], src, n - ft_strlen(dest) - 1);
-	return (ft_strlen(dest) + ft_strlen(src));
+	ft_strncpy(&dest[len], src, n - len - 1);
+	return ((n + len) - (n - len));
 }

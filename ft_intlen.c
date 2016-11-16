@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_intlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/10/06 07:48:39 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/16 04:34:07 by tiskow           ###   ########.fr       */
+/*   Created: 2016/11/10 13:28:44 by tiskow            #+#    #+#             */
+/*   Updated: 2016/11/10 13:29:03 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncpy(char *dest, const char *src, size_t n)
-{	
-	ft_memcpy(dest, src, n);
-	if (ft_strlen(dest) < n)
-		ft_bzero(&dest[ft_strlen(dest)], (n - ft_strlen(dest)));
-	return (dest);
+size_t	ft_intlen(int n)
+{
+	size_t 	i;
+
+	i = 0;
+	while (n)
+	{
+		n = n / 10;
+		i++;
+	}
+	return (i);
 }

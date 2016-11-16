@@ -6,25 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/12 05:07:21 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/10 06:32:43 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/15 01:56:35 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-
-static size_t	ft_intlen(int n)
-{
-	size_t 	i;
-
-	i = 0;
-	while (n)
-	{
-		n = n / 10;
-		i++;
-	}
-	return (i);
-}
 
 char	*ft_itoa(int n)
 {

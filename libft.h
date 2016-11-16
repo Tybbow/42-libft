@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_libft.h                                         :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/04 14:20:06 by tiskow            #+#    #+#             */
-/*   Updated: 2016/10/18 11:23:16 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/16 08:14:47 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memchr(const void *str, int c, size_t n);
 int		ft_memcmp(const void *str1, const void *str2, size_t n);
 size_t	ft_strlen(const char *str);
+size_t	ft_intlen(int n);
 size_t	ft_dstrlen(char **str);
 char	*ft_strdup(const char *str);
 char	*ft_strcpy(char *dest, const char *src);

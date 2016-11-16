@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/05 06:55:07 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/10 01:53:19 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/16 04:37:01 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	size_t	i;
 
 	i = 0;
-	while (i < n)
+	while (n--)
 	{
 		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 		i++;

@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/11 06:38:56 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/10 06:14:51 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/15 10:39:01 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,7 @@ char			**ft_strsplit(char const *s, char c)
 				i = i + ft_strlen(word);
 			}
 		}
+		i++;
 	}
 	return (split);
 }

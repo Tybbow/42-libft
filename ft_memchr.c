@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/05 07:43:35 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/08 13:53:01 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/14 07:20:39 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {
-	while (n-- && str)
+	while (n--)
 	{
 		if (*(unsigned char *)str == (unsigned char)c)
 			return ((unsigned char *)str);
@@ -22,3 +22,4 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	}
 	return (NULL);
 }
+	

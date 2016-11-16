@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2016/09/12 09:42:07 by tiskow            #+#    #+#              #
-#    Updated: 2016/11/07 12:35:48 by tiskow           ###   ########.fr        #
+#    Created: 2016/11/07 12:35:17 by tiskow            #+#    #+#              #
+#    Updated: 2016/11/14 08:29:47 by tiskow           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,16 +21,12 @@ DFLAGS = -fPIC -shared
 AR = ar rc
 ARQ = ar -q
 
-all: $(NAME)
-
-$(NAME): compilation
-
-compilation:
+$(NAME):
 	$(CC) $(HEADER) $(CFLAGS) $(SRCS)
 	$(AR) $(NAME) $(OBJS)
+	@(ranlib $(NAME))
 
-compilationdyn: fclean
-	$(CC) $(HEADER) $(CFLAGS) $(SRCS)
+all: $(NAME)
 
 clean:
 	/bin/rm -f $(OBJS)
@@ -39,3 +35,5 @@ fclean: clean
 	/bin/rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: fclean clean all
