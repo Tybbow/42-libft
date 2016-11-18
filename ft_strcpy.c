@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/06 02:13:12 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/16 05:22:57 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/16 11:21:19 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 char	*ft_strcpy(char *dest, const char *src)
 {
-	ft_memcpy(dest, src, ft_strlen(src) + 1);
-	return (dest);
+	return (ft_strncpy(dest, src, ft_strlen(src) + 1));
 }
 

@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/05 02:40:55 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/09 06:52:50 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/16 11:11:38 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned int i;
-
-	i = -1;
-	while (++i < n)
-		((unsigned char *)s)[i] = (unsigned char)'\0';
+	ft_memset(s, '\0', n);
 }

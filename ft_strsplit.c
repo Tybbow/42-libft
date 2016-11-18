@@ -6,85 +6,45 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/11 06:38:56 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/15 10:39:01 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/17 09:49:12 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char		**ft_realloc2d(char **str)
+static	int		ft_countSplit(char const *str, char c)
 {
-    int     i;
-    char    **tmp;
+	int count;
+	int i;
 
-    tmp = (char **)ft_memalloc(ft_strlen((const char *)str) + 2);
-	i = -1;
-	while (str[i++])
-		tmp[i] = str[i];
-    free(str);
-	tmp[i] = 0;
-    return (tmp);
-}
-
-static char		*ft_realloc(char *str)
-{
-	char	*tmp;
-
-	tmp = (char *)ft_memalloc(ft_strlen(str) + 2);
-	if (tmp)
-		tmp = ft_strcpy(tmp, str);
-	free(str);
-	return (tmp);
-}
-
-static char		*ft_word(const char *s, char c, int i)
-{
-	char	*word;
-	int		y;
-
-	y = 0;
-	word = ft_memalloc(1);
-	if (word)
-	{
-		word[0] = s[i];
-		while (s[i] != c && s[i] != '\0')
-		{
-			word = ft_realloc(word);
-			word[y++] = s[i++];
-		}
-		word[y] = '\0';
-	}
-	return (word);
-}
-
-char			**ft_strsplit(char const *s, char c)
-{
-	size_t	i;
-	size_t	y;
-	char	*word;
-	char	**split;
-
-	y = 0;
+	count = 0;
 	i = 0;
-	if (!s || !c)
-		return (NULL);
-	split = ft_memalloc(1);
-	while (s[i])
+	while (str[i])
 	{
-		while (s[i] == c && s[i])
-			i++;
-		if (s[i] != c && s[i])
-		{
-			word = ft_word(s, c, i);
-			if (word)
-			{
-				split = ft_realloc2d(split);
-				split[y++] = word;
-				split[y] = 0;
-				i = i + ft_strlen(word);
-			}
-		}
-		i++;
+		if (ft_strclen(&str[i], c))
+			count++;
+		i += ft_strclen(&str[i], c) ? ft_strclen(&str[i], c) : 1;
 	}
+	return (count);
+}
+
+char			**ft_strsplit(char const *str, char c)
+{
+	char	**split;
+	int		i;
+	int		j;
+
+	i = 0;
+	j = 0;
+	split = ft_memalloc(sizeof(split) * ft_countSplit(str, c) + 1);
+	if (!split)
+		return (NULL);
+	while (str[i])
+	{
+		if (ft_strclen(&str[i], c))
+			split[j++] = ft_strsub(str, i, ft_strclen(&str[i], c));
+		i += ft_strclen(&str[i], c) ? ft_strclen(&str[i], c) : 1;
+	}
+	split[j] = NULL;
 	return (split);
 }
