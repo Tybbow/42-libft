@@ -6,12 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/12 07:16:03 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/15 12:22:18 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/18 01:32:26 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "wchar.h"
 
 void	ft_putchar(char c)
 {

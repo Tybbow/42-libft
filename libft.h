@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/04 14:20:06 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/17 05:42:26 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/18 01:29:07 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
 char	*ft_itoa(int n);
 void	ft_putchar(char c);
+void	ft_putwchar_fd(wchar_t c, int fd);
 void	ft_putstr(const char *str);
 void	ft_putendl(const char *str);
 void	ft_putnbr(int n);
