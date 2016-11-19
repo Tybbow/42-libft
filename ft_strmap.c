@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/10 05:32:40 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/19 15:42:00 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/19 15:58:24 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 char	*ft_strmap(const char *s, char (*f)(char))
 {
-
 	char	*str;
 	int		i;
 

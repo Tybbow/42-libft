@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/06 02:04:24 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/17 05:43:23 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/19 15:58:08 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 size_t	ft_strlen(const char *str)
 {
-	return(ft_strclen(str, '\0'));
+	return (ft_strclen(str, '\0'));
 }

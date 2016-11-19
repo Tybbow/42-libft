@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/10 04:49:59 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/16 08:14:36 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/19 15:56:34 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memalloc(size_t size)
 {
-	void 	*tmp;
+	void	*tmp;
 
 	tmp = (void *)malloc(size);
 	if (tmp)

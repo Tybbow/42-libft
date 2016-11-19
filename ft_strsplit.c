@@ -6,13 +6,13 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/11 06:38:56 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/17 09:49:12 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/19 16:01:00 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int		ft_countSplit(char const *str, char c)
+static	int		ft_countsplit(char const *str, char c)
 {
 	int count;
 	int i;
@@ -36,7 +36,7 @@ char			**ft_strsplit(char const *str, char c)
 
 	i = 0;
 	j = 0;
-	split = ft_memalloc(sizeof(split) * ft_countSplit(str, c) + 1);
+	split = ft_memalloc(sizeof(split) * ft_countsplit(str, c) + 1);
 	if (!split)
 		return (NULL);
 	while (str[i])

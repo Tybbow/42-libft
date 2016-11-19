@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/10 01:51:54 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/17 09:44:22 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/19 16:02:20 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strnstr(const char *str, const char *search, size_t n)
 {
-	size_t 	i;
-	
+	size_t	i;
+
 	i = 0;
 	if (!*search)
 		return ((char *)str);

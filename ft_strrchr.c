@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/10 01:15:44 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/16 11:51:52 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/19 15:59:34 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	int 	i;
+	int	i;
 
 	i = ft_strlen(str) + 1;
 	while (i--)

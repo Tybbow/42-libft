@@ -6,13 +6,13 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/13 07:08:17 by tiskow            #+#    #+#             */
-/*   Updated: 2016/10/17 04:46:59 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/19 15:56:53 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list	*new;
 	t_list	*crt;

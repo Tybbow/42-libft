@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/12 05:07:21 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/17 09:11:48 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/19 15:56:00 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 char	*ft_itoa(int n)
 {
 	size_t			intlen;
-	unsigned int 	nb;
+	unsigned int	nb;
 	char			*tmp;
-	
+
 	nb = (n < 0) ? -n : n;
 	intlen = ft_intlen(nb);
 	tmp = ft_memalloc(intlen);
