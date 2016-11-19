@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/04 14:20:06 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/18 01:29:07 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/19 15:31:48 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int		ft_memcmp(const void *str1, const void *str2, size_t n);
 size_t	ft_strclen(char const *str, char c);
 size_t	ft_strlen(const char *str);
 size_t	ft_intlen(int n);
+size_t	ft_min(size_t a, size_t b);
+size_t	ft_max(size_t a, size_t b);
 char	*ft_strdup(const char *str);
 char	*ft_strcpy(char *dest, const char *src);
 char	*ft_strncpy(char *dest, const char *src, size_t n);

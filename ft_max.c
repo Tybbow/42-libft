@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_max.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/10/10 02:02:47 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/19 15:31:56 by tiskow           ###   ########.fr       */
+/*   Created: 2016/11/19 15:32:12 by tiskow            #+#    #+#             */
+/*   Updated: 2016/11/19 15:38:50 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strncmp(const char *str1, const char *str2, size_t n)
+size_t	ft_max(size_t a, size_t b)
 {
-	return (ft_memcmp(str1, str2, ft_min(n, ft_strlen(str2) + 1)));
+	return ((a >= b) ? a : b);
 }
