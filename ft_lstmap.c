@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/13 07:08:17 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/19 15:56:53 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/19 16:28:29 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,19 @@
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list	*new;
-	t_list	*crt;
+	t_list	*link;
 
-	new = ft_lstnew(lst->content, lst->content_size);
-	if (new)
+	new = NULL;
+	link = NULL;
+	while (lst != NULL)
 	{
-		new = f(new);
-		while (lst->next)
+		if (new == NULL)
 		{
-			lst = lst->next;
-			crt = ft_lstnew(lst->content, lst->content_size);
-			while (new->next)
-				crt = crt->next;
-			crt->next = new;
+			new = f(lst);
+			link = new;
 		}
+		else
+			link->next = f(lst);
 	}
 	return (new);
 }
