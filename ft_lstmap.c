@@ -6,28 +6,33 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/13 07:08:17 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/19 16:29:56 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/19 07:41:21 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list*))
 {
-	t_list	*new;
-	t_list	*link;
+	t_list	*result;
+	t_list	*tmp;
+	t_list	*tmp2;
 
-	new = NULL;
-	link = NULL;
-	while (lst != NULL)
+	if (!lst || !f)
+		return (NULL);
+	tmp2 = f(lst);
+	if ((result = ft_lstnew(tmp2->content, tmp2->content_size)))
 	{
-		if (new == NULL)
+		tmp = result;
+		lst = lst->next;
+		while (lst)
 		{
-			new = f(lst);
-			link = new;
+			tmp2 = f(lst);
+			if (!(tmp->next = ft_lstnew(tmp2->content, tmp2->content_size)))
+				return (NULL);
+			tmp = tmp->next;
+			lst = lst->next;
 		}
-		else
-			link->next = f(lst);
 	}
-	return (new);
+	return (result);
 }
