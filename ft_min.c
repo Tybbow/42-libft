@@ -6,11 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/19 15:26:27 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/19 15:52:04 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/21 01:15:52 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 size_t	ft_min(size_t a, size_t b)
 {

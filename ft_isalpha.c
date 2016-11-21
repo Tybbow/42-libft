@@ -6,11 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/10 02:35:30 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/10 05:41:10 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/21 01:13:54 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 int		ft_isalpha(int c)
 {

@@ -6,11 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/10 05:02:58 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/16 11:24:18 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/21 01:17:35 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 char	*ft_strnew(size_t size)
 {

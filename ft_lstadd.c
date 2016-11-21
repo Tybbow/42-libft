@@ -6,11 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/13 07:02:29 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/19 15:51:14 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/21 01:13:12 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {

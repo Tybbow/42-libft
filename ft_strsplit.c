@@ -6,11 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/11 06:38:56 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/19 16:01:00 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/21 01:17:47 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 static	int		ft_countsplit(char const *str, char c)
 {

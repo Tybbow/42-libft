@@ -6,7 +6,7 @@
 #    By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 12:35:17 by tiskow            #+#    #+#              #
-#    Updated: 2016/11/19 17:24:42 by tiskow           ###   ########.fr        #
+#    Updated: 2016/11/21 01:25:40 by tiskow           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,26 +25,38 @@ ft_isdigit.c ft_memchr.c ft_putnbr_fd.c ft_striter.c ft_strnstr.c \
 ft_isprint.c ft_memcmp.c ft_putstr.c ft_striteri.c ft_strrchr.c \
 ft_itoa.c ft_memcpy.c ft_putstr_fd.c ft_strjoin.c ft_strsplit.c 
 
-OBJS = $(SRCS:.c=.o)
+OBJS	= $(patsubst %.c,%.o,$(SRCS))
 HEADER = -I ./includes/
 CC = gcc -c
-CFLAGS = -Wall -Werror -Wextra -fPIC
+CFLAGS = -Wall -Werror -Wextra
 DFLAGS = -fPIC -shared
 AR = ar rc
 ARQ = ar -q
 
-$(NAME):
-	$(CC) $(HEADER) $(CFLAGS) $(SRCS)
-	$(AR) $(NAME) $(OBJS)
+$(NAME): $(OBJS)
+	@(ar rc $(NAME) $(OBJS))
 	@(ranlib $(NAME))
+	@echo "----------------------------------"
+	@echo "[\033[32m✔\033[0m] Compilation : $@"
+	@echo "----------------------------------"
 
 all: $(NAME)
 
+%.o: %.c
+	@($(CC) $(CFLAGS) $(HEADERS) -o $@ $^)
+	@echo "\033[0m[\033[32m✔\033[0m] Function : $@ \033[0m"
+
 clean:
-	/bin/rm -f $(OBJS)
+	rm -rf $(OBJS)
+	@echo "----------------------------------"
+	@echo "[\033[32m✔\033[0m] $(NAME): Objects deleted"
+	@echo "----------------------------------"
 
 fclean: clean
-	/bin/rm -f $(NAME)
+	rm -rf $(NAME)
+	@echo "----------------------------------"
+	@echo "[\033[32m✔\033[0m] $(NAME): All deleted"
+	@echo "----------------------------------"
 
 re: fclean all
 

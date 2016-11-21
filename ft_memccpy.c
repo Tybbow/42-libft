@@ -6,11 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/05 07:00:57 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/09 06:13:09 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/21 01:15:32 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {

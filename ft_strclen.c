@@ -6,11 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/17 05:39:28 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/17 07:44:39 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/11/21 01:16:34 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 size_t		ft_strclen(char const *str, char c)
 {
