@@ -6,11 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/05 02:40:55 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/21 01:13:43 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/12/03 17:14:47 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

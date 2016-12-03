@@ -6,13 +6,18 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/10 05:47:06 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/28 00:55:52 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/12/03 18:26:32 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 int		ft_strequ(const char *str1, const char *str2)
 {
-	return (ft_strnequ(str1, str2, ft_strlen(str2)));
+	int n;
+
+	n = 0;
+	if (str1 && str2)
+		return (ft_strnequ(str1, str2, ft_strlen(str2) + 1));
+	return (0);
 }

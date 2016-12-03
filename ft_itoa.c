@@ -6,11 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/12 05:07:21 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/24 23:45:31 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/12/03 19:34:03 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 char	*ft_itoa(int n)
 {

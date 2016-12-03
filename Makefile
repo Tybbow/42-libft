@@ -6,7 +6,7 @@
 #    By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 12:35:17 by tiskow            #+#    #+#              #
-#    Updated: 2016/11/23 10:43:08 by tiskow           ###   ########.fr        #
+#    Updated: 2016/12/03 17:18:25 by tiskow           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,8 @@ ft_isalpha.c ft_memalloc.c ft_putendl_fd.c ft_strdup.c ft_strnequ.c \
 ft_isascii.c ft_memccpy.c ft_putnbr.c ft_strequ.c ft_strnew.c \
 ft_isdigit.c ft_memchr.c ft_putnbr_fd.c ft_striter.c ft_strnstr.c \
 ft_isprint.c ft_memcmp.c ft_putstr.c ft_striteri.c ft_strrchr.c \
-ft_itoa.c ft_memcpy.c ft_putstr_fd.c ft_strjoin.c ft_strsplit.c 
+ft_itoa.c ft_memcpy.c ft_putstr_fd.c ft_strjoin.c ft_strsplit.c \
+ft_countsplit.c
 
 OBJS	= $(patsubst %.c,%.o,$(SRCS))
 HEADER = -I ./includes/

@@ -6,11 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 13:28:44 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/24 23:45:49 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/12/03 17:15:31 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 size_t	ft_intlen(int n)
 {

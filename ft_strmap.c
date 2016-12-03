@@ -6,11 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/10 05:32:40 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/21 01:17:13 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/12/03 18:00:44 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 char	*ft_strmap(const char *s, char (*f)(char))
 {
@@ -18,6 +18,8 @@ char	*ft_strmap(const char *s, char (*f)(char))
 	int		i;
 
 	i = 0;
+	if (!s && !f)
+		return (NULL);
 	str = ft_strnew(ft_strlen(s));
 	if (!str)
 		return (NULL);

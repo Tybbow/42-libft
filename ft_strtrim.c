@@ -6,11 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/10 06:27:53 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/21 01:17:59 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/12/03 17:15:33 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 char	*ft_strtrim(char const *str)
 {

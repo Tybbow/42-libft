@@ -6,11 +6,11 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/10 02:04:51 by tiskow            #+#    #+#             */
-/*   Updated: 2016/11/21 01:13:39 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/12/03 17:14:42 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 int		ft_atoi(const char *nptr)
 {
