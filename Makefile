@@ -6,7 +6,7 @@
 #    By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 12:35:17 by tiskow            #+#    #+#              #
-#    Updated: 2016/12/03 17:18:25 by tiskow           ###   ########.fr        #
+#    Updated: 2016/12/05 02:32:36 by tiskow           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,9 +48,9 @@ all: $(NAME)
 	@echo "\033[0m[\033[32m✔\033[0m] Function : $@ \033[0m"
 
 clean:
-	rm -rf $(OBJS)
+	@(rm -rf *.o)
 	@echo "----------------------------------"
-	@echo "[\033[32m✔\033[0m] $(NAME): Objects deleted"
+	@echo "[\033[32m✔\033[0m] Libft file *.o Objects deleted"
 	@echo "----------------------------------"
 
 fclean: clean
