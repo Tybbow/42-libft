@@ -6,7 +6,7 @@
 /*   By: tiskow <tiskow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/12 23:31:17 by tiskow            #+#    #+#             */
-/*   Updated: 2016/12/05 01:36:35 by tiskow           ###   ########.fr       */
+/*   Updated: 2016/12/17 04:40:40 by tiskow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putnbr_fd(int n, int fd)
 	unsigned int	nb;
 	char			tmp[13];
 	size_t			tmplen;
-	
+
 	nb = (n < 0) ? -n : n;
 	intlen = ft_intlen(nb);
 	tmplen = intlen;
